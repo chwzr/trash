@@ -21019,44 +21019,109 @@
                         <main class="card" role="main" data-page="index">
 
                             <article class="card-block">
-                                <!-- <img id="mainHead" src="https://www.led1.de/shop/images/stripped.svg">
+                                 <img id="mainHead" src="https://www.led1.de/shop/images/stripped.svg">
 
 
                                 <a href="https://www.led1.de/shop/led-module-leisten-strips/power-led-strips/">
                                     <img id="xstripe" src="https://www.led1.de/shop/images/FELIX/flatpowerstripgroup.png">
-                                </a> -->
+                                </a> 
+
+
+                                <center>
+                                        <h1 id="slog" style="margin-left: auto; margin-right: auto; margin-bottom: 1em; font-size: 72px; color: #29357D; font-family: 'IBM Plex Sans';"><span class="slogan"><a class="slogan" href="https://www.led1.de/shop/led-module-leisten-strips/power-led-strips/">Neues Licht. Besser ist das.</a></span></h1>
+                                </center>
 
                                 <div class="stripecontainer" id="ps1">
-                                    <img class="ps" src="https://www.led1.de/shop/images/FELIX/maihero/P1_3.png">
+                                    <img class="ps dp1" src="https://www.led1.de/shop/images/FELIX/maihero/P1_3.png">
                                     <div class="label" id="label1"> Power Flat LED Pro</div>
                                 </div>
 
+                                
+                                <svg class="flyx" width="580" height="50" xmlns="http://www.w3.org/2000/svg">         
+                                    <defs>
+                                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                              <stop offset="0%" style="stop-color:#29357d;stop-opacity:1" />
+                                              <stop offset="100%" style="stop-color:#0276e3;stop-opacity:1" />
+                                            </linearGradient>
+                                          </defs>
+                                    <g>
+                                        <ellipse class="ff"  ry="2.898537" rx="261.351438" id="svg_2" cy="21.498431" cx="299.903341" stroke-width="1" fill="url(#grad1)" />
+                                    </g>
+                                </svg>
+
 
                                 <div class="stripecontainer" id="ps2">
-                                    <img class="ps ps2" src="https://www.led1.de/shop/images/FELIX/maihero/P2_3.png">
+                                    <img class="ps dp1" src="https://www.led1.de/shop/images/FELIX/maihero/P2_3.png">
                                     <div class="label" id="label2"> Flat LED Pro</div>
                                 </div>
 
+
+                                <svg class="flyx" width="580" height="50" xmlns="http://www.w3.org/2000/svg">         
+                                    <defs>
+                                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                              <stop offset="0%" style="stop-color:#29357d;stop-opacity:1" />
+                                              <stop offset="100%" style="stop-color:#0276e3;stop-opacity:1" />
+                                            </linearGradient>
+                                          </defs>
+                                    <g>
+                                        <ellipse class="ff"  ry="2.898537" rx="261.351438" id="svg_2" cy="21.498431" cx="299.903341" stroke-width="1" fill="url(#grad1)" />
+                                    </g>
+                                </svg>
+
                                 <div class="stripecontainer" id="ps3">    
-                                    <img class="ps ps3" src="https://www.led1.de/shop/images/FELIX/maihero/P3_3.png">
+                                    <img class="ps dp1" src="https://www.led1.de/shop/images/FELIX/maihero/P3_4.png">
                                     <div class="label" id="label3"> HighCRI CCT 300</div>
                                 </div>
 
 
+                                <svg class="flyx" width="580" height="50" xmlns="http://www.w3.org/2000/svg">         
+                                    <defs>
+                                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                              <stop offset="0%" style="stop-color:#29357d;stop-opacity:1" />
+                                              <stop offset="100%" style="stop-color:#0276e3;stop-opacity:1" />
+                                            </linearGradient>
+                                          </defs>
+                                    <g>
+                                        <ellipse class="ff"  ry="2.898537" rx="261.351438" id="svg_2" cy="21.498431" cx="299.903341" stroke-width="1" fill="url(#grad1)" />
+                                    </g>
+                                </svg>
+
+
+                                <script>
+                                    $(document).ready(function () {
+                                        var $horizontal = $('.flyx');
+                                        var startPosition = $horizontal.position().left;
+                                        var speed = 400;
+                                        $(window).scroll(function () {
+                                            var st = $(this).scrollTop();
+                                            var newPos = (st * (speed/100)) + startPosition;
+                                            $horizontal.css({
+                                                'left': newPos
+                                            });
+                                        });
+                                    });
+                                </script>
+
+
+
+
 
                                 <style>
+                                    .flyx{
+                                        position: relative;
+                                        left: -100%;
+                                        max-width: 90vw;
+                                        overflow:hidden;
+                                    }
                                     .stripecontainer{
-                                        /* width: calc(100% - 1em);  */
                                         width: calc(100% + 2em);
-                                        overflow: hidden;
+                                        /* overflow: hidden; */
                                         margin: -1em ;
                                         display: flex;
                                         flex-direction: column;
                                         justify-content: center;
                                         align-items: center;
-                                        
-
-                                    }
+                                     }
 
                                     .ps{
                                         transform: translateX(-100%); 
@@ -21066,6 +21131,7 @@
                                         /* width: calc(100% - 1em);                                         */
                                         margin: 2em;
                                         opacity: 0;
+
                                     }
 
                                     .label{
@@ -21079,12 +21145,33 @@
                                     #slog{
                                         margin-top: 1em;
                                     }
+
+
+                                    .dp1 {
+                                    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                                    transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+                                    }
+
+                                    .dp1:hover {
+                                    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                                    }
+
+
+                                    .cent{
+                                        text-align:center;
+                                        width: 100%;
+                                    }
+
+                                    @media(max-width: 1440px){
+                                        .stripecontainer{
+                                        /* width: calc(100% + 2em); */
+                                        overflow: hidden;
+                                        }
+                                    }
                                 </style>
 
 
-                                <center>
-                                    <h1 id="slog" style="margin-left: auto; margin-right: auto; margin-bottom: 1em; font-size: 72px; color: #29357D; font-family: 'IBM Plex Sans';"><span class="slogan"><a class="slogan" href="https://www.led1.de/shop/led-module-leisten-strips/power-led-strips/">Neues Licht. Noch besser.</a></span></h1>
-                                </center>
+
                                 <style>
 
                                 </style>
@@ -21483,6 +21570,8 @@
                                 </style>
                                 <script>
                                     // console.log("ok")
+
+                                    
                                     
 
                                     
@@ -21517,7 +21606,7 @@
                                             let tl = new TimelineMax();
                                             let vl = new TimelineMax();
 
-                                            tl.staggerTo('.ps', 1, {x:0, opacity: 1, ease: Power2.easeOut}, 0.4)
+                                            vl.staggerTo('.ps', 1, {x:0, opacity: 1, ease: Power2.easeOut}, 0.4)
 
                                             tl.set(["#slog", "#anibtn"], {
                                                 opacity: 0,
