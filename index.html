@@ -21032,9 +21032,10 @@
                                 </center>
 
                                 <div class="stripecontainer" id="ps1">
-                                    <!-- <img class="ps dp1" src="https://www.led1.de/shop/images/FELIX/maihero2/p1.png"> -->
-                                    <img class="ps dp1" src="https://chwzr.github.io/trash/stripe3/p1.jpg">
-                                    <div class="label" id="label1"> Power Flat LED Pro</div>
+                                    <a class="llk" href="https://www.led1.de/shop/led-module-leisten-strips/power-led-strips/">                   
+                                        <img class="ps dp1" src="https://chwzr.github.io/trash/stripe3/p2.jpg">
+                                        <div class="label" id="label1"> Variabler Eingangsspannung und unschlagbare Helligkeit:<b> Power Flat LED Pro</b> </div>
+                                    </a>
                                 </div>
 
                                 
@@ -21052,8 +21053,10 @@
 
 
                                 <div class="stripecontainer" id="ps2">
-                                    <img class="ps dp1" src="https://chwzr.github.io/trash/stripe3/p2.jpg">
-                                    <div class="label" id="label2"> Flat LED Pro</div>
+                                    <a class="llk" href="https://www.led1.de/shop/led-module-leisten-strips/flat-led-strips/">
+                                        <img class="ps dp1" src="https://chwzr.github.io/trash/stripe3/p1.jpg">
+                                        <div class="label" id="label2"> Die Günstigsten mit Konstantstromquelle: <b>Flat LED Pro</b></div>
+                                    </a>
                                 </div>
 
 
@@ -21069,9 +21072,11 @@
                                     </g>
                                 </svg>
 
-                                <div class="stripecontainer" id="ps3">    
-                                    <img class="ps dp1" src="https://chwzr.github.io/trash/stripe3/p3.jpg">
-                                    <div class="label" id="label3"> HighCRI CCT 300</div>
+                                <div class="stripecontainer" id="ps3">
+                                    <a class="llk" href="https://www.led1.de/shop/led-module-leisten-strips/led-strips/led-strip-farbtemperatur-einstellbar/solarox-highcri-cct-300-led-strip-5m-rolle-farbtemperatur-einstellbar.html">
+                                        <img class="ps dp1" src="https://chwzr.github.io/trash/stripe3/p3.jpg">
+                                        <div class="label" id="label3">Kaltweiß und Warmweiß in einem Streifen: <b>HighCRI CCT 300</b></div>
+                                    </a>
                                 </div>
 
 
@@ -21128,7 +21133,7 @@
                                         transform: translateX(-100%); 
                                         position: relative;
                                         overflow: hidden;
-                                        /* width: 200%; */
+                                        width: 100%;
                                         /* width: calc(100% - 1em);                                         */
                                         margin: 2em;
                                         opacity: 0;
@@ -21141,6 +21146,24 @@
                                         opacity: 0;
                                         height: 0;
                                         width: 100%;
+                                        text-decoration: none !important;
+                                    }
+
+                                    .label:hover{
+                                        text-decoration: none !important;
+                                    }
+
+
+                                    .llk{
+                                        text-decoration: none;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+
+                                    .llk:hover{
+                                        text-decoration: none;
                                     }
 
                                     #slog{
@@ -21164,6 +21187,10 @@
                                     }
 
                                     @media(max-width: 1440px){
+                                        .ps{
+                                            width: 200%;
+                                        }
+
                                         .stripecontainer{
                                         /* width: calc(100% + 2em); */
                                         overflow: hidden;
@@ -21578,7 +21605,7 @@
                                     
                                     function enter(i){
                                         let l = "#label" + i
-                                        TweenMax.to(l, 0.6, {opacity:1, height: "2em"})
+                                        TweenMax.to(l, 0.6, {opacity:1, height: "3em"})
                                     }
                                     function out(i){
                                         let l = "#label" + i
